@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'shortners#show'
+  root 'urls#new'
+
+  resources :urls, only: [:create]
 end
