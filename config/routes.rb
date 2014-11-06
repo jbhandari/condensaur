@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'shortners#show'
+  root 'urls#new'
 end
