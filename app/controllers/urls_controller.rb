@@ -12,7 +12,7 @@ class UrlsController < ApplicationController
 
   def url_params
     params.require(:url).permit().merge(
-      original_url: build(params[:url][:original_url)
+      original_url: build(params[:url][:original_url])
     )
   end
 
