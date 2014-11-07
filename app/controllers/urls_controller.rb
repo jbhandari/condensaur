@@ -4,12 +4,12 @@ class UrlsController < ApplicationController
   end
 
   def create
-    @url = Url.new(url_params)
+    @url = Url.find_or_create_by(url_params)
     save_url
   end
 
   def show
-    @url = Url.find(params[:id])
+    @url = Url.find_by(token: params[:id])
   end
   private
 
