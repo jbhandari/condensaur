@@ -8,7 +8,18 @@ class UrlsController < ApplicationController
     save_url
   end
 
+  def show
+    @url = Url.find(params[:id])
+  end
   private
+
+  def save_url
+    if @url.save
+      redirect_to url_path(@url)
+    else
+      render :new
+    end
+  end
 
   def url_params
     params.require(:url).permit().merge(
@@ -17,6 +28,6 @@ class UrlsController < ApplicationController
   end
 
   def build(url)
-    UrlBuilder.new(url)
+    UrlBuilder.new(url).format
   end
 end
