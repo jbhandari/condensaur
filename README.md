@@ -1,2 +1,2 @@
 It's Chris Bosh's most favorite url shortner. It utilizes Ruby, Rails, and jQuery. Enter in a url and condensaur will spit a url with a unique token that you can share. 
-![](https://zvzphw.bn1303.livefilestore.com/y2pZC1zgI3VDYrvgKMQ09ldWlvLu7eXSOLjcAJe-CnKRhypAg3L0kI7-6Cwb9icCZrYw88cHmz5UtpsfmDplC-GL3K9H8EiiPHo3kRXmEwGof4/Condensaur_image.png?psid=1)
+![](https://onedrive.live.com/redir?resid=75B34DF6332D9E93!618&authkey=!ABG1pmdY7wOerB0&v=3&ithint=photo%2cpng)
