@@ -1,5 +1,11 @@
-<h2> Welcome to Condensoar!</h2>
+<div class='wrapper'></div>
 
-<div id='url-form'>
+<div class='form-wrapper' id='url-form'>
+  <h2> Welcome to Condensaur!</h2>
   <%= render 'url_form', url: @url %>
+  <p> Enter in a url you want to condense! </p>
+</div>
+
+<div id='image'>
+  <%= image_tag("/dinosaur.png") %>
 </div>

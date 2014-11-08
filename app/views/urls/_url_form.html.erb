@@ -1,4 +1,4 @@
 <%= form_for url, remote: true do |form| %>
-  <%= form.text_field :original_url %>
-  <%= form.submit 'Condensoar' %>
+  <%= form.text_field :original_url, size: 40 %>
+  <%= form.submit 'Condense', class: 'button' %>
 <% end %>
