@@ -10,14 +10,20 @@ class UrlsController < ApplicationController
   end
 
   def show
-    @url = Url.find_by(token: params[:id])
+    @url = find_url
   end
+
   private
+
+  def find_url
+    Url.find_by(token: params[:id])
+  end
 
   def save_url
     if @url.save
-      redirect_to url_path(@url)
+      render :change
     else
+      flash[:error] = "Unsuccessful"
       render :new
     end
   end

@@ -1,6 +1,5 @@
 <h2> Welcome to Condensoar!</h2>
 
-<%= form_for @url do |form| %>
-  <%= form.text_field :original_url %>
-  <%= form.submit 'Condensoar' %>
-<% end %>
+<div id='url-form'>
+  <%= render 'url_form', url: @url %>
+</div>

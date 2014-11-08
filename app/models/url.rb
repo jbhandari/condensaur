@@ -1,7 +1,7 @@
 class Url < ActiveRecord::Base
   before_create :create_unique_token
 
-  validates :original_url, presence: true
+  validates :original_url, uniqueness: true, presence: true
 
   def to_param
     token
