@@ -11,7 +11,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :development do
-  # gem 'pry-rails'
-  # gem 'binding_of_caller'
-  # gem 'better_errors'
+  gem 'pry-rails'
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end
